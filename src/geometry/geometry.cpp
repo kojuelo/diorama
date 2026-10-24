@@ -25,3 +25,23 @@ float geometry::degreesToRadians(float degrees)
     return degrees * (PI / 180.0f);
 }
 
+float geometry::pointDistanceSquared(const Point &a, const Point &b)
+{
+    float xDiff = b.x - a.x;
+    float yDiff = b.y - a.y;
+
+    return (xDiff * xDiff) + (yDiff * yDiff);
+}
+
+float geometry::pointDistance(const Point &a, const Point &b)
+{
+    return std::sqrt(pointDistanceSquared(a, b));
+}
+
+Point geometry::pointInterpolate(const Point &a, const Point &b, float interpolant)
+{
+    return Point(
+        a.x + ((b.x - a.x) * interpolant), 
+        a.y + ((b.y - a.y) * interpolant)
+    );
+}
