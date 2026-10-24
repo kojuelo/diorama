@@ -13,14 +13,15 @@
     #define PI_2 M_PI_2f
 #endif
 
-using namespace kojuelo::diorama::geometry;
+using namespace kojuelo::diorama;
 
-float radiansToDegrees(float radians)
+float geometry::radiansToDegrees(float radians)
 {
     return radians * (180.0f / PI);
 }
 
-float degreesToRadians(float degrees)
+float geometry::degreesToRadians(float degrees)
 {
     return degrees * (PI / 180.0f);
 }
+

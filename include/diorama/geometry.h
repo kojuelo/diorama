@@ -1,6 +1,6 @@
 #pragma once
 
-#include <api.h>
+#include <diorama/api.h>
 
 DIORAMA_API_SCOPE_START
 

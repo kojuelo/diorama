@@ -1,4 +1,4 @@
-#include <geometry.h>
+#include <diorama/geometry.h>
 
 #include "../geometry/geometry.hpp"
 

@@ -1,6 +1,8 @@
 #pragma once
 
-#include <api.h>
+#include <diorama/api.h>
+
+#include <stdint.h>
 
 DIORAMA_API_SCOPE_START
 
@@ -10,9 +12,9 @@ typedef struct point_t
     float y;
 } point_t;
 
-DIORAMA_API bool point_equals(const point_t *point, const point_t *other);
+DIORAMA_API int8_t point_equals(const point_t *point, const point_t *other);
 
-DIORAMA_API bool point_equals_approx(const point_t *point, const point_t *other);
+DIORAMA_API int8_t point_equals_approx(const point_t *point, const point_t *other);
 
 DIORAMA_API void point_translate(point_t *point, float x, float y);
 
