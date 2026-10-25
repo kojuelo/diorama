@@ -20,27 +20,27 @@ void point_translate(point_t *point, float x, float y)
     POINT_API_TO_LIB(point)->translate(x, y);
 }
 
-void rotate_radians(point_t *point, float radians)
+void point_rotate_radians(point_t *point, float radians)
 {
     POINT_API_TO_LIB(point)->rotateRadians(radians);
 }
 
-void rotate_radians_at_pivot(point_t *point, const point_t *pivot, float radians)
+void point_rotate_radians_at_pivot(point_t *point, const point_t *pivot, float radians)
 {
     POINT_API_TO_LIB(point)->rotateRadiansAtPivot(*POINT_CONST_API_TO_LIB(pivot), radians);
 }
 
-void rotate_degrees(point_t *point, float degrees)
+void point_rotate_degrees(point_t *point, float degrees)
 {
     POINT_API_TO_LIB(point)->rotateDegrees(degrees);
 }
 
-void rotate_degrees_at_pivot(point_t *point, point_t *pivot, float degrees)
+void point_rotate_degrees_at_pivot(point_t *point, point_t *pivot, float degrees)
 {
     POINT_API_TO_LIB(point)->rotateDegreesAtPivot(*POINT_CONST_API_TO_LIB(pivot), degrees);
 }
 
-void scale(point_t *point, float x, float y)
+void point_scale(point_t *point, float x, float y)
 {
     POINT_API_TO_LIB(point)->scale(x, y);
 }
