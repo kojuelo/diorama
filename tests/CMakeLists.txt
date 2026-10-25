@@ -21,5 +21,6 @@ set_target_properties(unity PROPERTIES
     LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 
 target_link_libraries(diorama_tests PRIVATE unity)
+target_link_libraries(diorama_tests PRIVATE m) # Some math functions `nextafterf` need this.
 
 add_test(NAME API COMMAND diorama_tests)

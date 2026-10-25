@@ -3,7 +3,9 @@
 #include <stdio.h>
 #include <unity.h>
 
-#define FLOAT_EPSILON 0.0001f
+#include "point.h"
+
+#define FLOAT_TEST_EPSILON 0.00001f
 
 void setUp(void) {
     // set stuff up here
@@ -19,8 +21,8 @@ void test_point_translate(void)
 
     point_translate(&point, 1.0f, 2.0f);
 
-    TEST_ASSERT_FLOAT_WITHIN(FLOAT_EPSILON, 1.0f, point.x);
-    TEST_ASSERT_FLOAT_WITHIN(FLOAT_EPSILON, 2.0f, point.y);
+    TEST_ASSERT_FLOAT_WITHIN(FLOAT_TEST_EPSILON, 1.0f, point.x);
+    TEST_ASSERT_FLOAT_WITHIN(FLOAT_TEST_EPSILON, 2.0f, point.y);
 
     point_translate(&point, 1.0f, 2.0f);
 }
@@ -31,7 +33,9 @@ int main()
 
     printf("Hello world!\n");
 
-    RUN_TEST(test_point_translate);
+    // RUN_TEST(test_point_translate);
+
+    run_tests_point();
 
     
     // point_rotate_degrees(&point, 90.0f);
