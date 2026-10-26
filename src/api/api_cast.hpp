@@ -16,6 +16,14 @@
 
 #define CIRCLE_LIB_TO_API(circle) reinterpret_cast<circle_t *>(circle)
 
+#define SEGMENT_CONST_API_TO_LIB(segment) reinterpret_cast<const kojuelo::diorama::Segment *>(segment)
+
+#define SEGMENT_CONST_LIB_TO_API(segment) reinterpret_cast<const segment_t *>(segment)
+
+#define SEGMENT_API_TO_LIB(segment) reinterpret_cast<kojuelo::diorama::Segment *>(segment)
+
+#define SEGMENT_LIB_TO_API(segment) reinterpret_cast<segment_t *>(segment)
+
 #define BOUNDS_CONST_API_TO_LIB(bounds) reinterpret_cast<const kojuelo::diorama::Bounds *>(bounds)
 
 #define BOUNDS_CONST_LIB_TO_API(bounds) reinterpret_cast<const bounds_t *>(bounds)

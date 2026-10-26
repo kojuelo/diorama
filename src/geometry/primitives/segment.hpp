@@ -18,8 +18,8 @@ namespace kojuelo::diorama
             Segment::b = b;
         }
 
-        bool equals(const Segment &other);
-        bool equalsApprox(const Segment &other);
+        bool equals(const Segment &other) const;
+        bool equalsApprox(const Segment &other) const;
 
         void translate(float x, float y);
 

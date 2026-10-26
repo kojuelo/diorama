@@ -2,12 +2,12 @@
 
 using namespace kojuelo::diorama;
 
-bool kojuelo::diorama::Segment::equals(const Segment &other)
+bool kojuelo::diorama::Segment::equals(const Segment &other)  const
 {
     return a.equals(other.a) && b.equals(other.b);
 }
 
-bool kojuelo::diorama::Segment::equalsApprox(const Segment &other)
+bool kojuelo::diorama::Segment::equalsApprox(const Segment &other) const
 {
     return a.equalsApprox(other.a) && b.equalsApprox(other.b);
 }
