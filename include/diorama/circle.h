@@ -9,7 +9,7 @@ DIORAMA_API_SCOPE_START
 
 typedef struct circle_t
 {
-    point_t point;
+    point_t center;
     float radius;
 } circle_t;
 

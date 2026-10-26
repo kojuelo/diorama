@@ -1,19 +1,20 @@
 #pragma once
 
 #include "point.hpp"
+#include "../boundings/bounds.hpp"
 
 namespace kojuelo::diorama
 {
     class Circle
     {
     public:
-        Point point;
+        Point center;
         float radius;
 
         Circle() {};
-        Circle(float x, float y, float radius)
+        Circle(const Point& center, float radius)
         {
-            Circle::point = Point(x, y);
+            Circle::center = center;
             Circle::radius = radius;
         };
 
@@ -29,5 +30,7 @@ namespace kojuelo::diorama
         void rotateDegreesAtPivot(const Point &pivot, float degrees);
 
         void scale(float x, float y, float radius);
+
+        Bounds getBounds() const;
     };
 }
