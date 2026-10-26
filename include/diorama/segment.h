@@ -27,6 +27,6 @@ DIORAMA_API void segment_rotate_degrees(segment_t *segment, float degrees);
 
 DIORAMA_API void segment_rotate_degrees_at_pivot(segment_t *segment, const point_t *pivot, float degrees);
 
-DIORAMA_API void segment_scale(segment_t *segment, float x, float y, float radius);
+DIORAMA_API void segment_scale(segment_t *segment, float x, float y);
 
 DIORAMA_API_SCOPE_END

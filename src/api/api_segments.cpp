@@ -40,7 +40,7 @@ void segment_rotate_degrees_at_pivot(segment_t *segment, const point_t *pivot, f
     SEGMENT_API_TO_LIB(segment)->rotateDegreesAtPivot(*POINT_CONST_API_TO_LIB(pivot), degrees);
 }
 
-void segment_scale(segment_t *segment, float x, float y, float radius)
+void segment_scale(segment_t *segment, float x, float y)
 {
     SEGMENT_API_TO_LIB(segment)->scale(x, y);
 }
