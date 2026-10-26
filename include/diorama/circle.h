@@ -15,7 +15,7 @@ typedef struct circle_t
 
 DIORAMA_API int8_t circle_equals(const circle_t *circle, const circle_t *other);
 
-DIORAMA_API int8_t circle_equals_approx(const circle_t *circle, const point_t *other);
+DIORAMA_API int8_t circle_equals_approx(const circle_t *circle, const circle_t *other);
 
 DIORAMA_API void circle_translate(circle_t *circle, float x, float y);
 

@@ -10,7 +10,7 @@ int8_t circle_equals(const circle_t *circle, const circle_t *other)
     return CIRCLE_CONST_API_TO_LIB(circle)->equals(*CIRCLE_CONST_API_TO_LIB(other)) ? 1 : 0;
 }
 
-int8_t circle_equals_approx(const circle_t *circle, const point_t *other)
+int8_t circle_equals_approx(const circle_t *circle, const circle_t *other)
 {
     return CIRCLE_CONST_API_TO_LIB(circle)->equalsApprox(*CIRCLE_CONST_API_TO_LIB(other))  ? 1 : 0;
 }
