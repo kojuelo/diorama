@@ -15,3 +15,11 @@
 #define CIRCLE_API_TO_LIB(circle) reinterpret_cast<kojuelo::diorama::Circle *>(circle)
 
 #define CIRCLE_LIB_TO_API(circle) reinterpret_cast<circle_t *>(circle)
+
+#define BOUNDS_CONST_API_TO_LIB(bounds) reinterpret_cast<const kojuelo::diorama::Bounds *>(bounds)
+
+#define BOUNDS_CONST_LIB_TO_API(bounds) reinterpret_cast<const bounds_t *>(bounds)
+
+#define BOUNDS_API_TO_LIB(bounds) reinterpret_cast<kojuelo::diorama::Bounds *>(bounds)
+
+#define BOUNDS_LIB_TO_API(bounds) reinterpret_cast<bounds_t *>(bounds)
