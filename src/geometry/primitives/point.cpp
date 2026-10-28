@@ -58,5 +58,5 @@ void kojuelo::diorama::Point::rotateDegreesAtPivot(const Point &pivot, float deg
 void kojuelo::diorama::Point::scale(float x, float y)
 {
     Point::x *= x;
-    Point::y = y;
+    Point::y *= y;
 }

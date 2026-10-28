@@ -35,7 +35,7 @@ void point_rotate_degrees(point_t *point, float degrees)
     POINT_API_TO_LIB(point)->rotateDegrees(degrees);
 }
 
-void point_rotate_degrees_at_pivot(point_t *point, point_t *pivot, float degrees)
+void point_rotate_degrees_at_pivot(point_t *point, const point_t *pivot, float degrees)
 {
     POINT_API_TO_LIB(point)->rotateDegreesAtPivot(*POINT_CONST_API_TO_LIB(pivot), degrees);
 }
