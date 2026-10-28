@@ -35,7 +35,7 @@ void circle_rotate_degrees(circle_t *circle, float degrees)
     CIRCLE_API_TO_LIB(circle)->rotateDegrees(degrees);
 }
 
-void circle_rotate_degrees_at_pivot(circle_t *circle, point_t *pivot, float degrees)
+void circle_rotate_degrees_at_pivot(circle_t *circle, const point_t *pivot, float degrees)
 {
     CIRCLE_API_TO_LIB(circle)->rotateDegreesAtPivot(*POINT_CONST_API_TO_LIB(pivot), degrees);
 }

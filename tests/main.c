@@ -4,6 +4,7 @@
 #include <unity.h>
 
 #include "point.h"
+#include "circle.h"
 
 void setUp(void) {
     // set stuff up here
@@ -18,6 +19,7 @@ int main()
     UNITY_BEGIN();
 
     run_tests_point();
+    run_tests_circle();
 
     return UNITY_END();
 }
