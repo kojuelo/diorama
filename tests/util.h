@@ -19,3 +19,9 @@
     TEST_ASSERT_FLOAT_WITHIN(FLOAT_TEST_EPSILON, expected_bx, actual.b.x);                      \
     TEST_ASSERT_FLOAT_WITHIN(FLOAT_TEST_EPSILON, expected_by, actual.b.y);
 
+#define TEST_ASSERT_EQUAL_CAPSULE(expected_ax, expected_ay, expected_bx, expected_by, expected_radius, actual)  \
+    TEST_ASSERT_FLOAT_WITHIN(FLOAT_TEST_EPSILON, expected_ax, actual.segment.a.x);                              \
+    TEST_ASSERT_FLOAT_WITHIN(FLOAT_TEST_EPSILON, expected_ay, actual.segment.a.y);                              \
+    TEST_ASSERT_FLOAT_WITHIN(FLOAT_TEST_EPSILON, expected_bx, actual.segment.b.x);                              \
+    TEST_ASSERT_FLOAT_WITHIN(FLOAT_TEST_EPSILON, expected_by, actual.segment.b.y);                              \
+    TEST_ASSERT_FLOAT_WITHIN(FLOAT_TEST_EPSILON, expected_radius, actual.radius);

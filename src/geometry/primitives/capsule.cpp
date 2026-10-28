@@ -13,7 +13,7 @@ bool kojuelo::diorama::Capsule::equals(const Capsule &other) const
 
 bool kojuelo::diorama::Capsule::equalsApprox(const Capsule &other) const
 {
-    return segment.equals(other.segment) && (std::abs(radius - other.radius) < EQUALS_APROX_EPSILON);
+    return segment.equalsApprox(other.segment) && (std::abs(radius - other.radius) < EQUALS_APROX_EPSILON);
 }
 
 void kojuelo::diorama::Capsule::translate(float x, float y)
