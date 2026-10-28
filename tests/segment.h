@@ -5,8 +5,6 @@
 #include <unity.h>
 #include <diorama/segment.h>
 
-#include <math.h>
-
 void test_segment_equals()
 {
     segment_t s1 = {1.0f, 2.0f, 3.0f, 4.0f};

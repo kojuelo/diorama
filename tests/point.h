@@ -5,8 +5,6 @@
 #include <unity.h>
 #include <diorama/point.h>
 
-#include <math.h>
-
 void test_point_equals()
 {
     point_t p1 = {1.5f, -2.37f};

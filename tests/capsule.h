@@ -5,8 +5,6 @@
 #include <unity.h>
 #include <diorama/capsule.h>
 
-#include <math.h>
-
 void test_capsule_equals()
 {
     capsule_t c1 = {1.0f, 2.0f, 3.0f, 4.0f, 5.0f};

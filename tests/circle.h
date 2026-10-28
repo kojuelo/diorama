@@ -5,8 +5,6 @@
 #include <unity.h>
 #include <diorama/circle.h>
 
-#include <math.h>
-
 void test_circle_equals()
 {
     circle_t c1 = {1.0f, 2.0f, 3.0f};

@@ -25,8 +25,8 @@ void kojuelo::diorama::Point::translate(float x, float y)
 
 void kojuelo::diorama::Point::rotateRadians(float radians)
 {
-    float sin = std::sinf(radians);
-    float cos = std::cosf(radians);
+    float sin = std::sin(radians);
+    float cos = std::cos(radians);
 
     float xTemp = x;
     float yTemp = y;
