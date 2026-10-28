@@ -3,7 +3,7 @@
 #if _WIN32  // In Windows, this macro is needed to expose the PI macros.
     #define _USE_MATH_DEFINES
 #endif
-#include <math.h>
+#include <cmath>
 
 #if _WIN32 // Windows doesn't have f versions.
     #define PI M_PI

@@ -1,6 +1,6 @@
 #include "bounds.hpp"
 
-#include <math.h>
+#include <cmath>
 
 using namespace kojuelo::diorama;
 

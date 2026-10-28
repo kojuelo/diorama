@@ -2,7 +2,7 @@
 
 #include "../../macros.hpp"
 
-#include <math.h>
+#include <cmath>
 
 using namespace kojuelo::diorama;
 
