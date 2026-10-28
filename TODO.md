@@ -3,10 +3,10 @@
 ## API Tests
 
 ### Implement tests for `geometry/primitives`.
-- [ ] Implement tests for `Point`.
-- [ ] Implement tests for `Circle`.
-- [ ] Implement tests for `Segment`.
-- [ ] Implement tests for `Capsule`.
+- [x] Implement tests for `Point`.
+- [x] Implement tests for `Circle`.
+- [x] Implement tests for `Segment`.
+- [x] Implement tests for `Capsule`.
 
 ### Implement tests for `geometry/boundings`.
 - [ ] Implement tests for `Bounds`.
